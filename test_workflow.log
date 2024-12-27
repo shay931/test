@@ -1,0 +1,43 @@
+2024-12-26 22:46:04,732 - INFO - Starting test: Sauce Demo Workflow
+2024-12-26 22:46:04,732 - INFO - Navigating to login page
+2024-12-26 22:46:06,508 - INFO - LoginPage object created
+2024-12-26 22:46:06,508 - INFO - Attempting to log in with email: johndoe87079@example.com
+2024-12-26 22:46:10,196 - INFO - Login attempted
+2024-12-26 22:46:10,196 - INFO - Navigating to inventory page
+2024-12-26 22:46:10,196 - INFO - Searching for item: Fusion Backpack
+2024-12-26 22:46:12,009 - INFO - Search completed for item: Fusion Backpack
+2024-12-26 22:46:12,010 - INFO - Adding the first item to the cart
+2024-12-26 22:46:15,987 - INFO - Item added to cart
+2024-12-26 22:46:15,987 - INFO - Verifying item in the cart
+2024-12-26 22:46:16,062 - ERROR - Verification failed: Item was not added to the cart. Cart count: 1
+assert 1 == 2
+ +  where 1 = int('1')
+2024-12-26 22:48:56,159 - INFO - Starting test: Sauce Demo Workflow
+2024-12-26 22:48:56,161 - INFO - Navigating to login page
+2024-12-26 22:48:59,383 - INFO - LoginPage object created
+2024-12-26 22:48:59,383 - INFO - Attempting to log in with email: johndoe87079@example.com
+2024-12-26 22:49:02,881 - INFO - Login attempted
+2024-12-26 22:49:02,883 - INFO - Navigating to inventory page
+2024-12-26 22:49:02,883 - INFO - Searching for item: Fusion Backpack
+2024-12-26 22:49:04,300 - INFO - Search completed for item: Fusion Backpack
+2024-12-26 22:49:04,300 - INFO - Adding the first item to the cart
+2024-12-26 22:49:08,054 - INFO - Item added to cart
+2024-12-26 22:49:08,054 - INFO - Verifying item in the cart
+2024-12-26 22:49:08,138 - ERROR - Verification failed: Item was not added to the cart. Cart count: 1
+assert 1 == 2
+ +  where 1 = int('1')
+2024-12-26 22:49:22,252 - INFO - Starting test: Sauce Demo Workflow
+2024-12-26 22:49:22,252 - INFO - Navigating to login page
+2024-12-26 22:49:26,403 - INFO - LoginPage object created
+2024-12-26 22:49:26,403 - INFO - Attempting to log in with email: johndoe87079@example.com
+2024-12-26 22:49:29,899 - INFO - Login attempted
+2024-12-26 22:49:29,899 - INFO - Navigating to inventory page
+2024-12-26 22:49:29,899 - INFO - Searching for item: Fusion Backpack
+2024-12-26 22:49:31,428 - INFO - Search completed for item: Fusion Backpack
+2024-12-26 22:49:31,428 - INFO - Adding the first item to the cart
+2024-12-26 22:49:34,933 - INFO - Item added to cart
+2024-12-26 22:49:34,933 - INFO - Verifying item in the cart
+2024-12-26 22:49:34,984 - INFO - Item successfully added to the cart
+2024-12-26 22:49:34,984 - INFO - Verifying emprt cart
+2024-12-26 22:49:37,683 - INFO - Remove all item in the cart
+2024-12-26 22:49:37,683 - INFO - Test completed
