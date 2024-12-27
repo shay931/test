@@ -3,7 +3,6 @@ import time
 import logging
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
-from selenium.webdriver.common.by import By
 
 # Set up logging
 log_file = 'test_workflow.log'  # Define the log file name and location
@@ -15,7 +14,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 # Create a file handler for logging to a file
-file_handler = logging.FileHandler(log_file, mode='a')  # 'a' for appending to the file
+file_handler = logging.FileHandler(log_file, mode='w')  # 'a' for appending to the file
 
 # Create a log formatter
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
@@ -75,6 +74,5 @@ def test_sauce_demo_workflow(driver, first_name, last_name, email_address, passw
         logger.error(f"Verification failed: {e}")
         raise
 
-    # Optional: Verify that the item was correctly added by checking the cart page
     logger.info("Test completed")
 

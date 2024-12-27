@@ -27,15 +27,15 @@ class InventoryPage(BasePage):
         self.wait_for_element(add_to_cart_button)
         self.click_element(add_to_cart_button)
     def remove_all_item(self):
-        add_to_cart_button = (By.XPATH, "/html/body/div[2]/header/div[2]/div[1]/a")
-        self.wait_for_element(add_to_cart_button)
-        self.click_element(add_to_cart_button)
-        add_to_cart_button = (By.XPATH, '//*[@id="mini-cart"]/li/div/div/div[2]/div[2]/a')
-        self.wait_for_element(add_to_cart_button)
-        self.click_element(add_to_cart_button)
-        add_to_cart_button = (By.XPATH, '/html/body/div[3]/aside[2]/div[2]/footer/button[2]')
-        self.wait_for_element(add_to_cart_button)
-        self.click_element(add_to_cart_button)
+        CART_LINK  = (By.CSS_SELECTOR, "a.action.showcart")
+        self.wait_for_element(CART_LINK )
+        self.click_element(CART_LINK )
+        REMOVE_ITEM_BUTTON = (By.XPATH, '//*[@id="mini-cart"]/li/div/div/div[2]/div[2]/a')
+        self.wait_for_element(REMOVE_ITEM_BUTTON )
+        self.click_element(REMOVE_ITEM_BUTTON )
+        EMPTY_CART_MESSAGE   = (By.XPATH, '/html/body/div[3]/aside[2]/div[2]/footer/button[2]')
+        self.wait_for_element(EMPTY_CART_MESSAGE  )
+        self.click_element(EMPTY_CART_MESSAGE )
 
     def count_cart(self):
         try:
