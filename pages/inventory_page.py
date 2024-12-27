@@ -26,7 +26,7 @@ class InventoryPage(BasePage):
         add_to_cart_button = (By.XPATH, "//button[@title='Add to Cart']")
         self.wait_for_element(add_to_cart_button)
         self.click_element(add_to_cart_button)
-    def remove_item(self):
+    def remove_all_item(self):
         add_to_cart_button = (By.XPATH, "/html/body/div[2]/header/div[2]/div[1]/a")
         self.wait_for_element(add_to_cart_button)
         self.click_element(add_to_cart_button)

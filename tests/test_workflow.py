@@ -67,7 +67,7 @@ def test_sauce_demo_workflow(driver, first_name, last_name, email_address, passw
         assert int(cart_count) == 1, f"Item was not added to the cart. Cart count: {cart_count}"
         logger.info("Item successfully added to the cart")
         logger.info("Verifying empty cart")
-        inventory_page.remove_item()
+        inventory_page.remove_all_item()
         time.sleep(2)
         assert inventory_page.count_cart() == '', f"cart not empty"
         logger.info("Remove all item in the cart")
