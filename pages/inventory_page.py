@@ -16,7 +16,7 @@ class InventoryPage(BasePage):
 
     def add_first_item_to_cart(self):
         # Use a more general XPath to select the first item
-        first_item_locator = (By.XPATH, "(//a[contains(@class, 'product-item-link')])[2]")  # Update XPath if necessary
+        first_item_locator = (By.XPATH, "(//a[contains(@class, 'product-item-link')])[1]")  # Update XPath if necessary
         first_item = self.wait_for_element(first_item_locator)
 
         # Click on the first product link to navigate to its page

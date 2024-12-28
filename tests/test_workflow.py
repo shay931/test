@@ -26,7 +26,7 @@ file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
 @pytest.mark.parametrize("first_name, last_name, email_address, password, password_con, item_name", [
-    ("John", "Doef", 'johndoe87079@example.com', "Password123", "Password123", "Fusion Backpack")
+    ("John", "Doef", 'johndoe97790@example.com', "Password123", "Password123", "Driven Backpack")
 ])
 def test_sauce_demo_workflow(driver, first_name, last_name, email_address, password, password_con, item_name):
     logger.info("Starting test: Sauce Demo Workflow")
