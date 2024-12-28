@@ -25,9 +25,11 @@ file_handler.setFormatter(formatter)
 # Add handlers to the logger
 logger.addHandler(file_handler)
 
+# User details for sign up with item to add the cart
 @pytest.mark.parametrize("first_name, last_name, email_address, password, password_con, item_name", [
-    ("John", "Doef", 'johndoe97790@example.com', "Password123", "Password123", "Driven Backpack")
+    ("John", "Doef", 'johndoe97756@example.com', "Password123", "Password123", "Driven Backpack")
 ])
+
 def test_sauce_demo_workflow(driver, first_name, last_name, email_address, password, password_con, item_name):
     logger.info("Starting test: Sauce Demo Workflow")
 
@@ -69,7 +71,7 @@ def test_sauce_demo_workflow(driver, first_name, last_name, email_address, passw
         inventory_page.remove_all_item()
         time.sleep(2)
         assert inventory_page.count_cart() == '', f"cart not empty"
-        logger.info("Remove all item in the cart")
+        logger.info("Successfully to remove all item in the cart")
     except Exception as e:
         logger.error(f"Verification failed: {e}")
         raise
