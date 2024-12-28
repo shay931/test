@@ -5,7 +5,7 @@ from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 
 # Set up logging
-log_file = 'test_workflow.log'  # Define the log file name and location
+log_file = 'report.log'  # report for each operation
 
 # Create a logger
 logger = logging.getLogger()
@@ -39,7 +39,7 @@ def test_sauce_demo_workflow(driver, first_name, last_name, email_address, passw
     login_page = LoginPage(driver)
     logger.info("LoginPage object created")
 
-    # Step 2: Perform Login
+    # Step 2: sign up with new user
     logger.info(f"Attempting to log in with email: {email_address}")
     login_page.login(first_name, last_name, email_address, password, password_con)
     logger.info("Login attempted")
@@ -74,5 +74,5 @@ def test_sauce_demo_workflow(driver, first_name, last_name, email_address, passw
         logger.error(f"Verification failed: {e}")
         raise
 
-    logger.info("Test completed")
+    logger.info("Test completed")# test passed
 

@@ -1,0 +1,15 @@
+2024-12-28 08:23:16,226 - INFO - Starting test: Sauce Demo Workflow
+2024-12-28 08:23:16,227 - INFO - Navigating to login page
+2024-12-28 08:23:18,729 - INFO - LoginPage object created
+2024-12-28 08:23:18,731 - INFO - Attempting to log in with email: johndoe97790@example.com
+2024-12-28 08:23:22,442 - INFO - Login attempted
+2024-12-28 08:23:22,444 - INFO - Navigating to inventory page
+2024-12-28 08:23:22,444 - INFO - Searching for item: Driven Backpack
+2024-12-28 08:23:24,171 - INFO - Search completed for item: Driven Backpack
+2024-12-28 08:23:24,171 - INFO - Adding the first item to the cart
+2024-12-28 08:23:28,136 - INFO - Item added to cart
+2024-12-28 08:23:28,136 - INFO - Verifying item in the cart
+2024-12-28 08:23:28,186 - INFO - Item successfully added to the cart
+2024-12-28 08:23:28,186 - INFO - Verifying empty cart
+2024-12-28 08:23:30,869 - INFO - Remove all item in the cart
+2024-12-28 08:23:30,869 - INFO - Test completed

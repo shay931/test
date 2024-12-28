@@ -12,6 +12,7 @@ class LoginPage(BasePage):
 
 
     def login(self, first_name, last_name,email_address,password,password_con):
+        # sign up for new user
         self.enter_text(self.First_Name, first_name)
         self.enter_text(self.Last_Name, last_name)
         self.enter_text(self.Email_Adress, email_address)
